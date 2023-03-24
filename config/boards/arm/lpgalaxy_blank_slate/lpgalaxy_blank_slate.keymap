@@ -64,7 +64,7 @@
 	    then-layer = <FUN_L>;
         };
     five {
-        if-layers = <NAV_L SYM_L>;
+        if-layers = <NAV_L ARR_L>;
         then-layer = <MED_L>;
         };
     };
@@ -98,7 +98,7 @@
 #elif defined(TBLE_MIT)
  &trans &trans         &kp LCTRL  &kp LGUI    &kp LALT          &lt NAV_L SPACE                   &mo NUM_L       &kp RALT &kp RCTRL        &trans &trans
 #else
-  &kp LGUI   &kp LCTRL  &kp LALT    &shifty &lt NUM_L SPACE &lt FUN_L TAB &lt NAV_L BKSP &lt SYM_L RET  &shifty    &kp RALT &kp RCTRL &kp RGUI
+  &kp LGUI   &kp LCTRL  &kp LALT    &shifty &lt NUM_L SPACE &lt NAV_L TAB &lt ARR_L BKSP &lt SYM_L RET  &shifty    &kp RALT &kp RCTRL &kp RGUI
 #endif
             >;
         };
