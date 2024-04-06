@@ -70,6 +70,17 @@
         };
     };
 
+    behaviors {
+        lt: layer-tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp> <&kp>;
+        };
+    };
+
 // Conditional layer only when we have less thumb keys
 #ifdef TBLE_DUAL_2U
     cond_layers {
