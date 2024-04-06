@@ -101,7 +101,7 @@
 #ifdef QWERTY_BASE
   &kp Q      &kp W      &kp E       &kp R          &kp T   &none &none  &kp Y            &kp U          &kp I       &kp O      &kp P
   &kp A      &kp S      &kp D       &kp F          &kp G   &none &none  &kp H            &kp J          &kp K       &kp L      &kp QUOT
-  &mt LGUI Z &mt LCTL X &kp LALT C  &kp V          &kp B   &kp F14 &kp F19  &kp N        &kp M          &kp LALT COMMA   &mt LCTL DOT    &mt LGUI SEMI
+  &mt LGUI Z &mt LCTL X &mt LALT C  &kp V          &kp B   &kp F14 &kp F19  &kp N        &kp M          &mt LALT COMMA   &mt LCTL DOT    &mt LGUI SEMI
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
  &kp TAB    &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
