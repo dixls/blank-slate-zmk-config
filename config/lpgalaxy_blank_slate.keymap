@@ -63,10 +63,10 @@
             bindings = <&kp ESC>;
         };
         combo_enter {
-            timeout-ms = <45>;
+            timeout-ms = <50>;
             key-positions = <22 23>;
             bindings = <&kp RET>;
-            layers = <1>;
+            layers = <0>;
         };
     };
 
@@ -101,7 +101,7 @@
 #ifdef QWERTY_BASE
   &kp Q      &kp W      &kp E       &kp R          &kp T   &none &none  &kp Y            &kp U          &kp I       &kp O      &kp P
   &kp A      &kp S      &kp D       &kp F          &kp G   &none &none  &kp H            &kp J          &kp K       &kp L      &kp QUOT
-  &kp Z      &kp X      &kp C       &kp V          &kp B   &kp F14 &kp F19  &kp N        &kp M          &kp COMMA   &kp DOT    &kp SEMI
+  &mt LGUI Z &mt LCTL X &kp LALT C  &kp V          &kp B   &kp F14 &kp F19  &kp N        &kp M          &kp LALT COMMA   &mt LCTL DOT    &mt LGUI SEMI
 #else
  &kp ESC    &kp Q      &kp W      &kp F       &kp P          &kp B          &kp J            &kp L          &kp U       &kp Y      &kp QUOT      &kp BKSP
  &kp TAB    &kp A      &kp R      &kp S       &kp T          &kp G          &kp M            &kp N          &kp E       &kp I      &kp O         &kp QUOT
@@ -122,7 +122,7 @@
             bindings = <
 &kp N1      &kp N2     &kp N3     &kp N4     &kp N5     &none       &none    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
 &kp LG(LS(4)) &none    &kp PLUS   &kp UNDER  &kp LBKT   &none       &none    &none       &kp MINUS   &kp EQUAL   &kp LBKT    &kp RBKT
-&kp GRAVE   &kp LCTL   &kp LALT   &kp PIPE   &kp LBRC   &none       &none    &kp RBRC    &kp BSLH    &kp LT      &kp GT      &kp SLASH
+&kp GRAVE   &kp LCTL   &kp LALT   &kp PIPE   &kp LBRC   &none       &none    &kp RBRC    &kp BSLH    &trans      &trans      &kp SLASH
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
@@ -137,8 +137,8 @@
             label = "Sym";
             bindings = <
 &kp EXCL   &kp AT     &kp HASH    &kp DLLR     &kp PRCNT  &none        &none      &kp CARET &kp AMPS     &kp STAR     &kp LPAR   &kp RPAR
-&none      &none      &none      &none       &none        &none        &none      &kp LS(LARW) &kp LS(DARW) &kp LS(UARW) &kp LS(RARW) &none
-&kp TILDE  &none      &none      &none       &none        &none        &none      &trans    &kp PIPE     &trans       &trans     &kp QMARK
+&none      &none      &none      &none       &none        &none        &none      &kp LARW  &kp DARW     &kp UARW      &kp RARW  &none
+&kp TILDE  &none      &none      &none       &none        &none        &none      &trans    &kp PIPE     &kp LT       &kp GT     &kp QMARK
 #ifdef TBLE_DUAL_2U
 &trans  &trans       &trans     &kp N0              &trans                 &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
