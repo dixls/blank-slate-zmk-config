@@ -122,7 +122,7 @@
             label = "Num";
             bindings = <
 &kp N1      &kp N2     &kp N3     &kp N4     &kp N5     &none       &none    &kp N6      &kp N7      &kp N8      &kp N9      &kp N0
-&kp LG(LS(4)) &none    &kp PLUS   &kp UNDER  &kp LBKT   &none       &none    &none       &kp MINUS   &kp EQUAL   &kp LBKT    &kp RBKT
+&kp LG(LS(4)) &none    &kp PLUS   &kp UNDER  &kp LBKT   &none       &none    &kp RBKT    &kp MINUS   &kp EQUAL   &kp LBKT    &kp RBKT
 &kp GRAVE   &kp LCTL   &kp LALT   &kp PIPE   &kp LBRC   &none       &none    &kp RBRC    &kp BSLH    &trans      &trans      &kp SLASH
 #ifdef TBLE_DUAL_2U
 &trans  &trans        &trans     &trans              &trans                    &trans       &trans         &trans &trans &trans
