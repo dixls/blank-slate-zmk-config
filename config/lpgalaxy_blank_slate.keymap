@@ -70,14 +70,6 @@
             layers = <0>;
         };
     };
-    
-    cond_layers {
-      compatible = "zmk,conditional-layers";
-	    tri {
-	      if-layers = <NUM_L SYM_L>;
-	      then-layer = <FUN_L>;
-      };
-    };
 
     behaviors {
         brm: bottom_row_mods {
@@ -95,10 +87,10 @@
 #ifdef TBLE_DUAL_2U
     cond_layers {
         compatible = "zmk,conditional-layers";
-	tri {
-	    if-layers = <NUM_L NAV_L>;
-	    then-layer = <SYM_L>;
-        };
+	      tri {
+	          if-layers = <NUM_L SYM_L>;
+	          then-layer = <FUN_L>;
+            };
     };
 #endif
 
