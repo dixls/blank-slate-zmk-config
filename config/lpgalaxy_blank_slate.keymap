@@ -18,6 +18,7 @@
 #define NUM_L 1
 #define SYM_L 2
 #define NAV_L 3
+#define FUN_L 4
 
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
@@ -68,6 +69,14 @@
             bindings = <&kp RET>;
             layers = <0>;
         };
+    };
+    
+    cond_layers {
+      compatible = "zmk,conditional-layers";
+	    tri {
+	      if-layers = <NUM_L SYM_L>;
+	      then-layer = <FUN_L>;
+      };
     };
 
     behaviors {
@@ -142,7 +151,7 @@
 &none      &none      &none      &none       &none        &none        &none      &kp LARW  &kp DARW     &kp UARW      &kp RARW  &none
 &kp TILDE  &none      &none      &none       &none        &none        &bootloader &trans    &kp PIPE     &kp LT       &kp GT     &kp QMARK
 #ifdef TBLE_DUAL_2U
-&trans  &trans       &trans     &trans             &trans                 &trans            &trans         &trans &trans &trans
+&trans  &trans       &trans     &trans          &kp DEL               &trans            &trans         &trans &trans &trans
 #elif defined(TBLE_MIT)
 &trans &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
 #else
@@ -166,6 +175,23 @@
 #endif
             >;
         };
+
+        sym_layer {
+            label = "Fun";
+            bindings = <
+&kp F1   &kp F2  &kp F3  &kp F4   &kp F5  &trans &trans &kp F6     &kp F7   &kp F8  &kp F9  &kp F10
+&trans   &trans  &trans  &trans   &kp F11 &trans &trans &kp F12    &trans   &trans  &trans  &trans
+&none    &none   &none   &trans   &none   &trans &trans   &none    &none    &none   &trans  &none
+#ifdef TBLE_DUAL_2U
+&trans &trans   &trans     &trans          &trans                    &trans       &trans         &trans &trans &trans
+#elif defined(TBLE_MIT)
+&trans  &trans        &trans     &trans      &trans                &trans             &trans      &trans   &trans &trans &trans
+#else
+&trans &trans        &trans     &kp RPAR        &trans          &trans       &trans    &trans  &trans         &trans &trans &trans
+#endif
+            >;
+        };
+
 
 
     };
