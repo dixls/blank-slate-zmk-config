@@ -110,7 +110,7 @@
  &kp LSHFT  &kp Z      &kp X      &kp C       &kp D          &kp V          &kp K            &kp H          &kp COMMA   &kp DOT    &kp SEMI      &kp RET
 #endif
 #ifdef TBLE_DUAL_2U
- &kp LGUI  &kp LCTL   &kp LALT   &lt NAV_L TAB  &lt NUM_L SPACE  &lt SYM_L BKSP    &kp RSHFT   &kp LALT   &kp RCTL   &kp RGUI
+ &kp LCTL  &kp LGUI   &kp LALT   &lt NAV_L TAB  &lt NUM_L SPACE  &lt SYM_L BKSP   &kp RSHFT   &kp RALT   &kp RGUI   &kp RCTL
 #elif defined(TBLE_MIT)
  &kp LGUI    &kp LCTL   &kp LALT   &lt NAV_L TAB &lt NUM_L SPACE &kp SPACE  &lt SYM_L BKSP &kp RSHFT &kp RALT &kp RCTL &kp RGUI
 #else
